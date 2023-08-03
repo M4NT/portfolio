@@ -1740,4 +1740,45 @@ body {
   -webkit-transition-delay: .16s;
           transition-delay: .16s;
 }
+
+#mouse-hover-div {
+  background: linear-gradient(
+  to right,
+    aquamarine,
+    mediumpurple
+  );
+  position:absolute;
+  height:100px;
+  aspect-ratio: 0.5;
+  
+  border-radius:50%;
+  /* animation: rotate 10s infinite; */
+ 
+  filter:blur(200px);
+  left:0%;
+  top:0%;
+  transform:translate(0%, 0%);
+}
+
+/* #blur {
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:2;
+  backdrop-filter:blur(200px);
+} */
+
+@keyframes rotate {
+  0% {
+    rotate:0deg;
+  }
+  
+  50% {
+    scale: 0.5;
+  }
+  
+  100% {
+    rotate:360deg;
+  }
+}
 /*# sourceMappingURL=main.css.map */
